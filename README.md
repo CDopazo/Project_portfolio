@@ -18,5 +18,6 @@ My best work will be show in the following folders of this reposiroty:
 * Google analytics
 
 ## Contact me:
- Email: dopazo_k@hotmail.com
- Linkedin: https://www.linkedin.com/in/carlos-dopazo-k/
+
+ * Email: dopazo_k@hotmail.com
+ * Linkedin: https://www.linkedin.com/in/carlos-dopazo-k/
