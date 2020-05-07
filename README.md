@@ -15,6 +15,7 @@ My best work will be show in the following folders of this reposiroty:
 * Practical Machine Learning
 * Data products
 * Data analysis Web apps
+* Google analytics
 
 ## Contact me:
  Email: dopazo_k@hotmail.com
