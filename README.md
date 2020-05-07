@@ -14,7 +14,7 @@ My best work will be show in the following folders of this reposiroty:
 * Regression Models
 * Practical Machine Learning
 * Data products
-* Data analysis Web apps
+* Data analysis Web APPs
 * Google analytics
 
 ## Contact me:
