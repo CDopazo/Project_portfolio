@@ -9,6 +9,7 @@ Im a highly motivated professional with a bachelors degree in **Biology Science*
 
 My best work will be show in the following folders of this reposiroty:
 
+* R Programming
 * Exploratory Analysis
 * Statistical Inference
 * Regression Models
