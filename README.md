@@ -9,14 +9,14 @@ Im a highly motivated professional with a bachelors degree in **Biology Science*
 
 My best work will be show in the following folders of this reposiroty:
 
-* R Programming
-* Exploratory Analysis
-* Statistical Inference
-* Regression Models
-* Practical Machine Learning
-* Data products
-* Data analysis Web APPs
-* Google analytics
+* [R Programming](https://github.com/CDopazo/Project_portfolio/tree/master/R%20programming)
+* [Exploratory Analysis]()
+* [Statistical Inference]()
+* [Regression Models]()
+* [Practical Machine Learning]()
+* [Data products]()
+* [Data analysis Web APPs]()
+* [Google analytics]()
 
 ## Contact me:
 
