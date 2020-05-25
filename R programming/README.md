@@ -13,7 +13,7 @@ time-consuming computations.**
 ### [Hospital Quality Compare functions](XXXXX)
 
 Here you will find an **example of functions to analize the data from
-[Hospital Compare web site](http://hospitalcompare.hhs.gov) ** run by
+[Hospital Compare web site](http://hospitalcompare.hhs.gov)** run by
 the U.S. Department of Health and Human Services. In this folder you
 will found some **functions** that will help to **find some specific
 information from the hospitals** around the US and ranking them in
