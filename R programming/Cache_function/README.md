@@ -16,6 +16,7 @@ it can be looked up in the cache rather than recomputed.
 <img src="cache_img.jpg" width="800px" />
 
 ## matrix\_inverse\_cache.R
+[See the code here](https://github.com/CDopazo/Project_portfolio/blob/master/R%20programming/Cache_function/matrix_inverse_cache.R)
 
 In this subfolder repository a **cache function that calculates the
 inverse of a matrix** can be found. **Matrix inversion is usually a
