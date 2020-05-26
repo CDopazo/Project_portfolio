@@ -35,11 +35,11 @@ observations than those shown in this work.
 
 ### 2018 OBIS Venezuela Marine registry
 
-[See the data manipulation code here](XXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/data_manipulation.R)
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/map_1.R)
 
 In this map every red dot represents a **observation of a specimen**
 registered be a university or institute and properly cataloged at a
@@ -49,7 +49,7 @@ registered be a university or institute and properly cataloged at a
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/map_2.R)
 
 Here we can see the **Orinoco’s delta marine region** that is the target
 of this project. It counts with **1646 sigthings** or registers of
@@ -67,7 +67,7 @@ kingdom, domain. (
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/barplot_1.R)
 
 In this chart we can see the **representation of the diversity** of the
 Orinoco’s delta marine region, it counts with **270 diferent species**
@@ -82,7 +82,7 @@ below kingdom and above class.(
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/Plot_1.R)
 
 In the previous plot it can be seen the **representatives of the most
 frequent phylums** in the orinoco delta. **Arhtropoda** is by far **the
@@ -93,7 +93,7 @@ like: Insects, **Crustaceans** or Aracnids.
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Marine_characterization_Orinoco_Delta/coding/plot_2.R)
 
 In this plot it can be clearly seen that the **Malacostraca** is the
 most frequent class at the Orinoco’s delta marine region. This class
