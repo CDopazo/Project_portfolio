@@ -47,7 +47,7 @@ of completely observed cases in each data file**. Then it **return a
 data frame where the first column is the name of the file and the second
 column is the number of complete cases. **
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Pollution_monitoring_functions/coding/Missings_values_counting.R)
 
 Example:
 
@@ -76,7 +76,7 @@ particulate matter data from the directory specified in the ‘directory’
 argument and **returns the mean of the pollutant across all of the
 monitors, ignoring any missing values coded as NA.**
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Pollution_monitoring_functions/coding/Mean_pollutant_calculator.R)
 
 Example:
 
@@ -110,7 +110,7 @@ threshold requirement.** **If no monitors meet the threshold**
 requirement, then the function should **return a numeric vector of
 length 0.**
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Pollution_monitoring_functions/coding/Correlation_pollutant_missing_values_treshold.R)
 
 Example
 
