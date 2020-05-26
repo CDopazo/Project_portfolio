@@ -73,34 +73,34 @@ in the United states over the 10-year period 1999–2008.
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_1.R)
 
 #### Have total emissions from PM 2.5 decreased in the Baltimore City, Maryland fips == “24510”) from 1999 to 2008?
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_2.R)
 
 #### Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008?
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_3.R)
 
 #### Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_4.R)
 
 #### How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_5.R)
 
 #### Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == “06037”). Which city has seen greater changes over time in motor vehicle emissions?
 
 ![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Air_pollutant_PM25/coding/plot_6.R)
