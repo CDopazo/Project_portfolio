@@ -13,11 +13,11 @@ compute the mean, especially if it has to be computed repeatedly
 make sense to cache the value of the mean so that when we need it again,
 it can be looked up in the cache rather than recomputed.
 
-<img src="images/cache_img.jpg" width="800px" />
+<img src="images/cache_img.jpg" width="1000px" />
 
 #### Matrix inverse cache function
 
-[See the code here](https://github.com/CDopazo/Project_portfolio/blob/master/R%20programming/Cache_function/coding/matrix_inverse_cache.R)
+[See the code here](XXXXX)
 
 In this subfolder repository a **cache function that calculates the
 inverse of a matrix** can be found. **Matrix inversion is usually a
