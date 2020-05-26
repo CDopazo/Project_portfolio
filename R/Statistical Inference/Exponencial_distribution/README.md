@@ -49,13 +49,13 @@ analized.
   - **simulations** = 1000
   - **n** = 40
 
-[See the data manipulation code here](XXXXXXXXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/Exponencial_distribution/coding/data_simulation.R)
 
 ## Simulation Analisis
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-[See the plot code here](XXXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/Exponencial_distribution/coding/Plot_1.R)
 
 **There is almost no difference** between the **sample mean and the
 theorical mean**, we spected that by doing so many simulations. The
