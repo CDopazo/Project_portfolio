@@ -35,13 +35,13 @@ called “Stupid Backoff” (Brants et al 2007)
     URL](https://rpubs.com/Carlos_Dopazo/NextWordApp_Presentation)
 
 
-- [See the n-gram code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/n_grams_prob.Rmd)
+* [See the n-gram code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/n_grams_prob.Rmd)
 
-- [See the server code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/server.R)
+* [See the server code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/server.R)
 
-- [See the UI code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/ui.R)
+* [See the UI code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/ui.R)
 
-- [See the Next Word Generator Function code here]https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/Next_word_Function_03.R)
+* [See the Next Word Generator Function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Next_word_predictor_app/coding/Next_word_Function_03.R)
 
 ## Dataset
 
