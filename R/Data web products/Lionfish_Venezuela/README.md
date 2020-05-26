@@ -102,13 +102,13 @@ The data base is still online on OBIS record
 Download the data from the repository
 [here](http://ipt.iobis.org/caribbeanobis/resource?r=pez_leon)
 
-[See the data manipulation code here](XXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/data_loading.R)
 
 ### Lionfish Box plots:
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/plot_1.R)
 
 This boxplots can give some **overall insight** of the parameters, it
 can be seen that **most of the lionfish** are **gathering at latitude
@@ -120,7 +120,7 @@ mostly between -67 and -65 longitude**, and **swiming in a mean depth of
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/plot_2.R)
 
 The overall goal of these time series is to **identify a pattern in
 time** of the parameters of the depth or position. **Are the lionfish
@@ -144,7 +144,7 @@ randomly scattered among the Venezuelan coast.
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/map_1.R)
 
 Here it can be see that the sights of the lionfish get stack at the
 **central coastal region of Venezuela.** between **Falcon and Sucre**
@@ -159,7 +159,7 @@ more randomly scattered among the Venezuelan coast.
 
 <img src="images/lionfish_heatmap.png" width="1000px" />
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/heatmap.R)
 
 This kind of chart deal better with the **overplotting** managing to
 show better were the lionfish are gathering. Now it can be **clearly
@@ -3070,7 +3070,7 @@ callbacks.shift()();
 
 </div>
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/map_2.R)
 
 Despite this kind of graphic its kind of messy, it **merges the 3
 principal dimensions** of the data set, **the position plotting a
@@ -5508,7 +5508,7 @@ callbacks.shift()();
 
 </div>
 
-[See the map code here](XXXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Lionfish_Venezuela/coding/map_3.R)
 
 For the last map a google map was plotted with only the **position and
 depth** of the sighthing, its less messy than the previous plot but with
