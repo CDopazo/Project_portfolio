@@ -6,7 +6,7 @@ United World College Venezuelan test 2017
 **UWC (or United World Colleges)** is a system of fee-paying independent
 **schools and educational programs** with a stated mission of **“making
 education a force to unite people, nations and cultures for peace and a
-sustainable future”. ** [UWC official site](https://www.uwc.org/)
+sustainable future”.** [UWC official site](https://www.uwc.org/)
 
 <img src="images/UWC_img.jpg" width="1000px" />
 
