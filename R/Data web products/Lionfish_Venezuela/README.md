@@ -167,7 +167,7 @@ seen** that despite the fact that there are several places of sighting,
 this **sigthings** are **mainly concentrated in the central coast,
 between Puerto Cabello and Guatire.**
 
-#### Location, Depth and Quantity interactives lionfish maps for Venezuela.
+### Location, Depth and Quantity interactives lionfish maps for Venezuela.
 
 Try out the interactive map here
 #### [3 Dimension Map](https://cdopazo.github.io/publishing/map_2.html)
