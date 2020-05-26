@@ -49,7 +49,7 @@ Data.csv”).
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
-[See the plot code here](XXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Hospital_quality_comparison_functions/coding/plot_30days_mortality.R)
 
 ### Finding the best hospital in a state (best\_hospital.R)
 
@@ -67,7 +67,7 @@ function with the exact message “invalid state”. If an invalid outcome
 value is passed to best, the function should throw an error via the stop
 function with the exact message “invalid outcome”.
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Hospital_quality_comparison_functions/coding/best_hospital.R)
 
 Here is some sample output from the function:
 
@@ -111,7 +111,7 @@ stop function with the exact message “invalid state”. If an invalid
 outcome value is passed to rankhospital, the function will send an error
 via the stop function with the exact message “invalid outcome”.
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Hospital_quality_comparison_functions/coding/rank_hospital.R)
 
 ``` r
 source("coding/rank_hospital.R")
@@ -142,7 +142,7 @@ hospital name, and the second column is named state, which contains the
 data on a particular outcome will be excluded from the set of hospitals
 when deciding the rankings.
 
-[See the function code here](XXXXX)
+[See the function code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/Hospital_quality_comparison_functions/coding/rank_all.R)
 
 ``` r
 source("coding/rank_all.R")
