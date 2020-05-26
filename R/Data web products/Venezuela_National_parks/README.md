@@ -45,9 +45,9 @@ Try out the **working html map here:**
 
 <img src="images/Rplot.png" width="500px" />
 
-[See the data manipulation code here](XXXXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Venezuela_National_parks/coding/data_map.R)
 
-[See the map code here](XXXXX)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Venezuela_National_parks/coding/np_map.R)
 
 ### References:
 
