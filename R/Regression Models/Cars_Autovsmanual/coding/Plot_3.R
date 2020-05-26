@@ -1,0 +1,1 @@
+pairs(mpg ~ ., data = mtcars)
