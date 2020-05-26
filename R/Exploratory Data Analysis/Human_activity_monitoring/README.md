@@ -43,7 +43,7 @@ The overall goal here is to answer some questions about the human
 activity, like: **steps taken per day, plot the activity pattern,
 weekdays and weekends patterns, etc.**
 
-[See the data manipulation code here](XXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/reading_subsetting_data.R)
 
 ### Exploratory data analisis:
 
@@ -51,11 +51,11 @@ weekdays and weekends patterns, etc.**
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_1.R)
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_2.R)
 
 The **Average number of steps taken per day** is: and the median is:
 10765
@@ -64,11 +64,11 @@ The **Average number of steps taken per day** is: and the median is:
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_3.R)
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_4.R)
 
 The **Day interval with the maximum number of steps** taken across all
 days is the interval number: 835
@@ -77,8 +77,8 @@ days is the interval number: 835
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_5.R)
 
 ![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Human_activity_monitoring/coding/plot_6.R)
