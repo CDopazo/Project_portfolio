@@ -1,0 +1,129 @@
+---
+title: "Proyecto Final"
+author: "Carlos Dopazo"
+date: "3 de abril de 2019"
+output: html_document
+---
+
+#Cargando Datos
+```{r}
+setwd("~/R/Cursos data analisis/exploratoy data analisis/final")
+DATA <- readRDS("~/R/Cursos data analisis/exploratoy data analisis/final/data/summarySCC_PM25.rds")
+CODE<-readRDS("~/R/Cursos data analisis/exploratoy data analisis/final/data/Source_Classification_Code.rds")
+```
+
+#PLOT_1:
+# Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?
+Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+
+```{r}
+##WE WILL CREATE A NEW DF JUST WITH THE TOTAL EMISSIONS PER YEAR
+SUMA1 <- aggregate(Emissions ~ year,DATA, sum)
+##PLOT 1
+png("plot1.png",width=480,height=480)
+barplot(
+  (SUMA1$Emissions)/10^6, names.arg=SUMA1$year,xlab="Year",ylab="PM2.5 Emissions 10^6 Tons", main="Total PM2.5 Emissions",col= c( "blue", "green","red", "yellow"))
+dev.off()
+```
+
+#PLOT_2
+#Have total emissions from PM2.5 decreased in the Baltimore City, Maryland fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+```{r}
+##WE WILL CREATE A NEW DF JUST WITH THE Baltimore City, Maryland data fipss=="24510" AND THEM CREATE THE SAME DF WITH THE TOTAL SUM EMISSION PER YEAR
+subsetDATA  <- DATA[DATA$fips=="24510", ]
+SUMA2 <- aggregate(Emissions ~ year, subsetDATA, sum)
+##PLOT 2
+png('plot2.png')
+barplot(height=SUMA2$Emissions, names.arg=SUMA2$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' for Baltimore'), col= c( "blue", "green","red", "yellow"))
+dev.off()
+```
+
+##PLOT_3
+Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? Which have seen increases in emissions from 1999-2008? Use the ggplot2 plotting system to make a plot answer this question.
+
+```{r}
+library(ggplot2)
+##WE WILL CREATE A NEW DF JUST WITH THE Baltimore City, Maryland data fipss=="24510""
+subsetDATA  <- DATA[DATA$fips=="24510", ]
+##WE WILL CREATE A NEW DF WITH THE TOTAL EMISSIONS PER YEAR AND PER TYPE POINT
+SUMA3 <- aggregate(Emissions ~ year + type, subsetDATA, sum)
+##PLOT3
+png("plot3.png", width=640, height=480)
+g <- ggplot(SUMA3, aes(year, Emissions, color = type))
+g <- g + geom_line() +
+  xlab("year") +
+  ylab(expression('Total PM'[2.5]*" Emissions ")) +
+  ggtitle('Total Emissions for Baltimore 1999-2008')
+print(g)
+dev.off()
+
+```
+
+##PLOT 4
+Across the United States, how have emissions from coal combustion-related sources changed from 1999-2008?
+
+```{r}
+####WE WILL MERGE THE National Emissions Inventory data with the SCC CODE data.
+MDATA <- merge(DATA, CODE, by="SCC")
+### WE WILL CREATE A LOGICAL VECTOR THAT POINT US THE ROWS WITH COAL POINTS
+CARBON <- grepl("coal", MDATA$Short.Name, ignore.case=TRUE)
+### WE WILL CREATE A NEW DF ONLY WITH THE CARBON POINTS
+CARBON_MDATA <- MDATA[CARBON, ]
+### WE WILL CREATE A NEW DF WITH THE TOTAL EMISSION BY YEAR
+SUMA4 <- aggregate(Emissions ~ year, CARBON_MDATA, sum)
+
+png("plot4.png", width=480, height=480)
+g <- ggplot(SUMA4/10^6, aes(factor(year), Emissions))
+g <- g + geom_bar(stat="identity") +
+  xlab("year") +
+  ylab(expression('Total PM'[2.5]*" Emissions 10^6 Tons")) +
+  ggtitle('Total Emissions from coal sources from 1999 to 2008')
+print(g)
+dev.off()
+```
+
+##PLOT5
+How have emissions from motor vehicle sources changed from 1999-2008 in Baltimore City?
+
+```{r}
+
+## WE WILL CREATE A SUBSET OF THE "ON-ROAD" TYPE OF POINTS ON BALTIMORE CITY.
+ONROAD_DATA <- DATA[DATA$fips=="24510" & DATA$type=="ON-ROAD",  ]
+## WE WILL CREATE A NEW DF WITH THE TOTAL SUM OF EMISSIONS PER YEAR.
+SUMA5 <- aggregate(Emissions ~ year, ONROAD_DATA, sum)
+
+##PLOT 5
+png("plot5.png", width=840, height=480)
+g <- ggplot(aggregatedTotalByYear, aes(factor(year), Emissions))
+g <- g + geom_bar(stat="identity") +
+  xlab("year") +
+  ylab(expression('Total PM'[2.5]*" Emissions")) +
+  ggtitle('Total Emissions from motor vehicle (type = ON-ROAD) in Baltimore City, Maryland (fips = "24510") from 1999 to 2008')
+print(g)
+dev.off()
+```
+
+##PLOT 6
+##Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
+
+```{r}
+
+##WE WILL CREATE A SUBSET OF DATA WITH THE ON-ROAD POINTS OF BALTIMORE CITY AND L.A.
+subsetNEI <- NEI[(NEI$fips=="24510"|NEI$fips=="06037") & NEI$type=="ON-ROAD",  ]
+## WE WILL CREATE A NEW DF WITH THE TOTAL SUM OF EMISSIONS PER YEAR.
+aggregatedTotalByYearAndFips <- aggregate(Emissions ~ year + fips, subsetNEI, sum)
+##WE WILL CHANGE THOSE ANOYING FIPS CODE FOR THE REAL NAMES (BALTIMORE AND LA)
+aggregatedTotalByYearAndFips$fips[aggregatedTotalByYearAndFips$fips=="24510"] <- "Baltimore, MD"
+aggregatedTotalByYearAndFips$fips[aggregatedTotalByYearAndFips$fips=="06037"] <- "Los Angeles, CA"
+##PLOT 6
+png("plot6.png", width=1040, height=480)
+g <- ggplot(aggregatedTotalByYearAndFips, aes(factor(year), Emissions))
+g <- g + facet_grid(. ~ fips)
+g <- g + geom_bar(stat="identity")  +
+  xlab("year") +
+  ylab(expression('Total PM'[2.5]*" Emissions")) +
+  ggtitle('Total Emissions from motor vehicle (type=ON-ROAD) in Baltimore City, MD (fips = "24510") vs Los Angeles, CA (fips = "06037")  1999-2008')
+print(g)
+dev.off()
+```
+
