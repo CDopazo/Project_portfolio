@@ -1,0 +1,1 @@
+fancyRpartPlot(Treemodel, cex=0.7)
