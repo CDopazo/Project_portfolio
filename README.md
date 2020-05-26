@@ -18,5 +18,5 @@ My best work will be show in the following folders of this reposiroty:
 
 ## Contact me:
 
- * Email: dopazo_k@hotmail.com
+ * Email: dopazo.carlos@gmail.com
  * Linkedin: https://www.linkedin.com/in/carlos-dopazo-k/
