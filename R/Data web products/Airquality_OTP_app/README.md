@@ -66,9 +66,9 @@ titles and above the check boxes.
 
 <img src="images/app_screenshot.png" width="5000px" />
 
-[See the server app code here](XXXXXXX)
+[See the server app code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Airquality_OTP_app/coding/server.R)
 
-[See the UI app code here](XXXXXXX)
+[See the UI app code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/Airquality_OTP_app/coding/ui.R)
 
 #### References:
 
