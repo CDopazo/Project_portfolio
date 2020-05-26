@@ -45,7 +45,7 @@ The data frame contains 32 observations on 11 (numeric) variables.
 9.  **gear:** number of forwards gears (factor: 3,4,5)
 10. **carb:** number of carburetors (factor: 1,2,3,4,5,6,7,8)
 
-[see the data manipulation code here](XXXXXXXXXXXX)
+[see the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/data_manipulation.R)
 
 The data look like this:
 
@@ -95,7 +95,7 @@ if there is a possible difference** between the **Miles per galong
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_1.R)
 
 The boxplot **appears to show that there is a difference**, but we can
 also try to plot the dispersion of the Miles per galon(mpg) data among
@@ -103,7 +103,7 @@ all the cars and better see if there is more variation.
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_2.R)
 
 **Manual transmission exceed automatic transmission by and average of 7
 Miles per galon (mpg)**. But is this a significant difference?. To be
@@ -162,7 +162,7 @@ But first we need to think in which variables should we add to our model
 
 ![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_3.R)
 
 In this preliminary plot we can see that the variables most linealy
 related with the Miles per galon(mpg) are:
@@ -174,7 +174,7 @@ related with the Miles per galon(mpg) are:
 
 ![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_4.R)
 
 Better correlation between these parameters can be seen in this
 multi-plot, they are **very correlated to the Miles per galon(mpg) and
@@ -332,7 +332,7 @@ was performed, the following plots show it.
 
 ![](README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_5.R)
 
 There do not appear to be any incident with these plots; **the residuals
 dispersion appear to be randomly**, the **standardized residuals appear
@@ -341,7 +341,7 @@ of outliers.**
 
 ![](README_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
-[see the plot code here](XXXXXXX)
+[see the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Cars_Autovsmanual/coding/Plot_6.R)
 
 This last plot definitely shows the overall **contribution of each
 correlated variable** to the Miles per galon(mpg), its **important to
