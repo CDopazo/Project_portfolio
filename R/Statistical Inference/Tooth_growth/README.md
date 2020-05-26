@@ -70,7 +70,7 @@ acid:VC)
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the plot code here](XXXXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/Tooth_growth/coding/Plot_1.R)
 
 In this preliminary chart it **seems like the Orange Juice (OJ) is a
 better supplement for Toothgrowing than Ascorbic Acid(VC)**, and also it
@@ -209,7 +209,7 @@ The p-value of **9.1556031^{-5}** suggest with a high probability that
 1.0mg and 2.0mg dosage are not equally strong promoting the average
 tooth growth when the supplement is Ascorbic Acid.
 
-[See the code for the inference here](XXXXXXX)
+[See the code for the inference here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/Tooth_growth/coding/data_transformations.R)
 
 ## Conclusions:
 
