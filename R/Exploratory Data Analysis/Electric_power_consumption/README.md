@@ -41,7 +41,7 @@ site](https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+powe
     active energy). It corresponds to an electric water-heater and an
     air-conditioner.
 
-[See the data manipulation code here](XXXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/data_subsetting.R)
 
 ## Exploratory Data Analysis:
 
@@ -55,7 +55,7 @@ with some ploting techniques.
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/plot_1.R)
 
 This is the frequency of the global active power of the house among all
 minutes in killowatts for the given days.
@@ -64,7 +64,7 @@ minutes in killowatts for the given days.
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/plot_2.R)
 
 This is a time serie for the given days of the household global
 minute-averaged active power in killowatts.
@@ -73,7 +73,7 @@ minute-averaged active power in killowatts.
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/plot_3.R)
 
 This is a time serie for the given days of the three energy submeterings
 (kitchen,laundry room and electric water-heater/air conditioner).
@@ -82,7 +82,7 @@ This is a time serie for the given days of the three energy submeterings
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/plot_4.R)
 
 This is a time serie for the given days for the household global
 minute-averaged reactive power in kilowatts.
@@ -91,6 +91,6 @@ minute-averaged reactive power in kilowatts.
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/Electric_power_consumption/coding/plot_5.R)
 
 This is a plot that merges all the previous plots.
