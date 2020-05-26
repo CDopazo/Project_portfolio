@@ -41,7 +41,7 @@ This information will then be used by Central Management for
 
 In 2018 **420 candidates** tooked the written test.
 
-[See the data manipulation code here](XXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/data_loading.R)
 
 ### Written test analysis:
 
@@ -49,7 +49,7 @@ In 2018 **420 candidates** tooked the written test.
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/Plot_1.R)
 
 This type of chart gives us an overview of the selection process. The
 “majority” of the candidates had results **below the average score**
@@ -60,7 +60,7 @@ candidates’ skills
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/Plot_2.R)
 
 This type of analysis allows us to visually interpret **which questions
 were answered wrongly by the majority**, this generates a vision of the
@@ -72,7 +72,7 @@ may be a product of the candidate skill level.**
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/Plot_3.R)
 
 This type of analysis is very similar to the previous one, however it is
 more specific. Summarizes **the percentage of people per question who
@@ -95,14 +95,15 @@ publics or privates institutes.**
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/Plot_4.R)
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the plot code here](XXXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/Plot_5.R)
 
 <img src="images/test_heatmap_2018.png" width="700px" />
 
 Try out the **interactive map** here:
 
 ### [Test Heatmap](https://cdopazo.github.io/publishing/test2018.html)
+[See the map code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/UWC_test/UWC_test_2018/coding/test_heatmap_html.R)
