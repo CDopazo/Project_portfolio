@@ -13,10 +13,8 @@ My best work will be show in the following folders of this reposiroty:
 * [Exploratory Analysis]()
 * [Statistical Inference]()
 * [Regression Models]()
-* [Practical Machine Learning]()
-* [Data products]()
-* [Data analysis Web APPs]()
-* [Google analytics]()
+* [Machine Learning]()
+* [Data Web Products]()
 
 ## Contact me:
 
