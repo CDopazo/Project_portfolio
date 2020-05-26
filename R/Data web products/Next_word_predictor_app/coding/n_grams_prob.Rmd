@@ -1,0 +1,256 @@
+---
+title: "Finding_SampleSize"
+author: "Carlos Dopazo Kozakas"
+date: "31/3/2020"
+output: html_document
+---
+### Libraries load:
+```{r,results = 'hide',warning=FALSE}
+library(NLP)
+library(tm)
+library(RWeka)
+library(slam)
+```
+
+### Data.txt loading:
+```{r}
+### Twitter data
+setwd("D:/R/Datascience_Coursera/10.Capstone/Data/final/en_US")
+con = file("en_US.twitter.txt", open = "r") 
+readustwitter <- readLines(con, encoding = "UTF-8", skipNul = TRUE)
+close.connection(con)
+rm(con)
+
+### Blogs data
+con = file("en_US.blogs.txt", open = "r") 
+readusblogs <- readLines(con, encoding = "UTF-8", skipNul = TRUE)
+close.connection(con)
+rm(con)
+### News data
+con = file("en_US.news.txt", open = "rb") 
+readusnews <- readLines(con, encoding = "UTF-8", skipNul = TRUE)
+close.connection(con)
+rm(con)
+```
+### Sampling data
+```{r}
+#Sampling 5% of the data for each data set:
+set.seed(1234)
+sampleusblogs<-sample(readusblogs, size=length(readusblogs) * 0.01)
+sampleusnews<-sample(readusnews, size=length(readusnews) * 0.01)
+sampleustwitter<-sample(readustwitter, size=length(readustwitter) * 0.01)
+
+full_sample <- c(sampleusblogs,sampleusnews,sampleustwitter)
+```
+### Releasing memory 01:
+```{r,results = 'hide'}
+rm(readusblogs)
+rm(readusnews)
+rm(readustwitter)
+
+rm(sampleusblogs)
+rm(sampleusnews)
+rm(sampleustwitter)
+gc()
+```
+### Building a corpus object and cleaning data:
+```{r}
+#Merge all the samples data sets in to a corpus object:
+corpora <- VCorpus(VectorSource(full_sample))
+#Lower all the capital letters:
+corpora <- tm_map(corpora, tolower)
+#Remove punctuation marks:
+corpora <- tm_map(corpora, removePunctuation)
+#Remove numbers:
+corpora <- tm_map(corpora, removeNumbers)
+#Change extras whitespace to single whitespace:
+corpora <- tm_map(corpora, stripWhitespace)
+#Create plain text documents, removing bold text, fonts, and any other special text formatting:
+corpora <- tm_map(corpora, PlainTextDocument)
+#Removing all non-english characters:
+corpora <- tm_map(corpora, content_transformer(function(x) iconv(x, "latin1", "ASCII", sub="")))
+```
+###Releasing Memory 02:
+```{r,results = 'hide'}
+rm(full_sample)
+gc()
+```
+### Building tokenization functions:
+```{r}
+#NGramTokenizar will separate the words one by one for "unitoken", in pairs for "bitoken" and in trio for "tritoken".
+unitoken <- function(x) NGramTokenizer(x, Weka_control(min = 1, max = 1))
+bitoken <- function(x) NGramTokenizer(x, Weka_control(min = 2, max = 2))
+tritoken <- function(x) NGramTokenizer(x, Weka_control(min = 3, max = 3))
+tettoken <- function(x) NGramTokenizer(x, Weka_control(min = 4, max = 4))
+```
+
+### Building TMatrix
+```{r}
+#TermDocumentMatrix will create a rich data matrix that stores the frequency of the words for mono, the frequency of pairs of words for  bi and the frequency of trios of words for tri.
+sin_tmatrix <- TermDocumentMatrix(corpora,
+                                  control = list(tokenize = unitoken,
+                                  wordLengths = c(1, 15)))
+bi_tmatrix <- TermDocumentMatrix(corpora,
+                                 control = list(tokenize = bitoken,
+                                 wordLengths = c(1, 15)))
+tri_tmatrix <- TermDocumentMatrix(corpora, 
+                                  control = list(tokenize = tritoken,
+                                  wordLengths = c(1, 15)))
+tet_tmatrix <- TermDocumentMatrix(corpora, 
+                                  control = list(tokenize = tettoken,
+                                  wordLengths = c(1, 15)))
+```
+### Releasing memory 03
+```{r,results = 'hide'}
+rm(corpora)
+gc()
+```
+### Building columns with the most frequent terms:
+```{r}
+sin_mostfreq <- findFreqTerms(sin_tmatrix,lowfreq = 1)
+bi_mostfreq <- findFreqTerms(bi_tmatrix,lowfreq=1)
+tri_mostfreq <- findFreqTerms(tri_tmatrix,lowfreq=1)
+tet_mostfreq <- findFreqTerms(tet_tmatrix,lowfreq=1)
+```
+
+### Row sum, fiding each term frequency
+```{r}
+#Building a matrix where the rows represent the most frequent terms and the columns will represent each line of text, them we will add all the columns to have the frequency of every term
+sin_tablefreq<-as.data.frame(row_sums(sin_tmatrix[sin_mostfreq,]))
+sin_tablefreq<-as.data.frame(sin_tablefreq)
+bi_tablefreq<-as.data.frame(row_sums(bi_tmatrix[bi_mostfreq,]))
+bi_tablefreq<-as.data.frame(bi_tablefreq)
+tri_tablefreq<-as.data.frame(row_sums(tri_tmatrix[tri_mostfreq,]))
+tri_tablefreq<-as.data.frame(tri_tablefreq)
+tet_tablefreq<-as.data.frame(row_sums(tet_tmatrix[tet_mostfreq,]))
+tet_tablefreq<-as.data.frame(tet_tablefreq)
+```
+
+### Naming properly
+```{r}
+## naming properly and fiding frequency
+sin_tablefreq<- data.frame(word=row.names(sin_tablefreq), frequency=sin_tablefreq[,1])
+bi_tablefreq<-data.frame(word=row.names(bi_tablefreq), frequency=bi_tablefreq[,1])
+tri_tablefreq<-data.frame(word=row.names(tri_tablefreq), frequency=tri_tablefreq[,1])
+tet_tablefreq<-data.frame(word=row.names(tet_tablefreq), frequency=tet_tablefreq[,1])
+
+## changing from factor to string
+sin_tablefreq$word<-as.character(sin_tablefreq$word)
+bi_tablefreq$word<-as.character(bi_tablefreq$word)
+tri_tablefreq$word<-as.character(tri_tablefreq$word)
+tet_tablefreq$word<-as.character(tet_tablefreq$word)
+```
+
+### Releasing memory 04
+```{r,results = 'hide'}
+rm(sin_tmatrix)
+rm(bi_tmatrix)
+rm(tri_tmatrix)
+rm(tet_tmatrix)
+rm(sin_mostfreq)
+rm(bi_mostfreq)
+rm(tri_mostfreq)
+rm(tet_mostfreq)
+rm(unitoken)
+rm(bitoken)
+rm(tritoken)
+rm(tettoken)
+gc()
+```
+### Building data frames with terms and probabilities of the words or pair of words
+### Create data frames with splited terms and probability
+```{r}
+uni_term_count<- data.frame(
+  word_1 = sin_tablefreq$word, 
+  uni_count = sin_tablefreq$frequency)
+
+bi_term_count <- data.frame(
+  pair_1 = bi_tablefreq$word,
+  word_1 = sapply(strsplit(as.character(bi_tablefreq$word), " ", fixed = TRUE), '[[', 1),
+  word_2 = sapply(strsplit(as.character(bi_tablefreq$word), " ", fixed = TRUE), tail , 1),
+  bi_count = bi_tablefreq$frequency)
+
+tri_term_count <- data.frame(
+  trio_1 = tri_tablefreq$word,
+  pair_1 = paste(
+    sapply(strsplit(as.character(tri_tablefreq$word), " ", fixed = TRUE), '[[', 1),
+    sapply(strsplit(as.character(tri_tablefreq$word), " ", fixed = TRUE), '[[', 2), 
+    sep =" "),
+  word_3 = sapply(strsplit(as.character(tri_tablefreq$word), " ", fixed = TRUE), tail, 1),
+  tri_count = tri_tablefreq$frequency)
+
+tet_term_count <- data.frame(
+  trio_1 = paste(
+    sapply(strsplit(as.character(tet_tablefreq$word), " ", fixed = TRUE), '[[', 1),
+    sapply(strsplit(as.character(tet_tablefreq$word), " ", fixed = TRUE), '[[', 2),
+    sapply(strsplit(as.character(tet_tablefreq$word), " ", fixed = TRUE), '[[', 3),
+    sep = " "),
+  word_4 = sapply(strsplit(as.character(tet_tablefreq$word), " ", fixed = TRUE), tail, 1),
+  tet_count = tet_tablefreq$frequency)
+```
+
+### Releasing memory 05
+```{r,results = 'hide'}
+rm(sin_tablefreq)
+rm(bi_tablefreq)
+rm(tri_tablefreq)
+rm(tet_tablefreq)
+gc()
+```
+
+### Probability calculation, Maximum likelyhood (MLE):
+
+```{r}
+#Final uni_gram table
+uni_terms<-data.frame(word_1=uni_term_count$word_1,
+                      prob=uni_term_count$uni_count/sum(uni_term_count$uni_count))
+
+#UNI and BI grams merging :
+uni_bi_prob<-merge(uni_term_count,bi_term_count,by = "word_1")
+#bigram probability estimation MLE:
+uni_bi_prob$bi_prob<-uni_bi_prob$bi_count/uni_bi_prob$uni_count
+#Final bi_gram table with prob
+bi_terms<-data.frame(word_1=uni_bi_prob$word_1,
+                     word_2=uni_bi_prob$word_2,
+                     prob=uni_bi_prob$bi_prob*100)
+rm(uni_bi_prob)
+
+#BI and TRI grams merging
+bi_tri_prob<-merge(bi_term_count,tri_term_count,by = "pair_1")
+bi_tri_prob$tri_prob<-bi_tri_prob$tri_count/bi_tri_prob$bi_count
+#Final tri_gram table with prob
+tri_terms<-data.frame(pair_1=bi_tri_prob$pair_1,
+                      word_3=bi_tri_prob$word_3,
+                      prob=bi_tri_prob$tri_prob*100)
+rm(bi_tri_prob)
+
+#Tri and Tetra grams merging
+tri_tet_prob<-merge(tri_term_count,tet_term_count,by = "trio_1")
+tri_tet_prob$tet_prob<-tri_tet_prob$tet_count/tri_tet_prob$tri_count
+#Final tetra_gram table with prob
+tet_terms<-data.frame(trio_1=tri_tet_prob$trio_1,
+                      word_4=tri_tet_prob$word_4,
+                      prob=tri_tet_prob$tet_prob*100)
+rm(tri_tet_prob)
+```
+
+
+### Saving Data.Frame for modeling
+```{r, eval=TRUE}
+setwd("D:/R/Datascience_Coursera/10.Capstone/Data/final/tablas_terminos/terminos_1%")
+#UNI
+write.table(uni_term_count,file="uni_term_count.csv")
+write.table(uni_terms,file="uni_terms.csv")
+#BI
+write.table(bi_term_count,file="bi_term_count.csv")
+write.table(bi_terms,file="bi_terms.csv")
+#TRI
+write.table(tri_term_count,file="tri_term_count.csv")
+write.table(tri_terms,file="tri_terms.csv")
+#TET
+write.table(tet_term_count,file="tet_term_count.csv")
+write.table(tet_terms,file="tet_terms.csv")
+
+print("ITS DOOOOOOOOOOOOOOOOONNNNNNEEEEEEEEEEEEEEEEEEE")
+```
+
