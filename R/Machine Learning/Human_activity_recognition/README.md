@@ -39,7 +39,7 @@ Download the project data set already labeled here:
 
 The data set contains **19622 observations and 160 variables**.
 
-[See the data manipulation code here](XXXXX)
+[See the data manipulation code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/Human_activity_recognition/coding/data_manipulation.R)
 
 ## Model Building
 
@@ -91,7 +91,7 @@ labels**. (learn more about Decision trees here:
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-[See the plot code here](XXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/Human_activity_recognition/coding/Plot_1.R)
 
 ### Decision tree confusion matrix plot
 
@@ -107,7 +107,7 @@ reference (learn more about confusion matrix here:
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-[See the plot code here](XXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/Human_activity_recognition/coding/Plot_2.R)
 
 The accuracy for the **Decision Tree model is 0.7376**, its good but
 maybe we can find a model that fits better our data. We will try the
@@ -177,7 +177,7 @@ training set** (learn more about Random Forest here:
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-[See the plot code here](XXXXX)
+[See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/Human_activity_recognition/coding/Plot_3.R)
 
 The accuracy for the **Random Forest model is 0.9945** almost 100% of
 right guessing, 0,55% out of sample error\*\*, we dont need to look for
