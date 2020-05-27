@@ -3,23 +3,23 @@ R Programming
 
 ## Repository content:
 
-### [Cache Function](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Cache_function)
+### [Cache Function](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Cache_function/README.md)
 
 Here you will find an example of a **function that stores a
 computational result for later use** if the same input is given. Cache
 functions are function that are able to **cache potentially
 time-consuming computations.**
 
-### [Hospital Quality Compare functions](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Hospital_quality_comparison_functions)
+### [Hospital Quality Compare functions](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Hospital_quality_comparison_functions/README.md)
 
 Here you will find an **example of functions to analize the data from
-[Hospital Compare web site](http://hospitalcompare.hhs.gov) ** run by
+[Hospital Compare web site](http://hospitalcompare.hhs.gov)** run by
 the U.S. Department of Health and Human Services. In this folder you
 will found some **functions** that will help to **find some specific
 information from the hospitals** around the US and ranking them in
 diferents ways:
 
-### [Pollution Monitoring functions](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Pollution_monitoring_functions)
+### [Pollution Monitoring functions](https://github.com/CDopazo/Project_portfolio/tree/master/R/R%20programming/Pollution_monitoring_functions/README.md)
 
 In this folder you will find some examples of scripts that help
 **calculate some of the most used functions in statistics**, such as
