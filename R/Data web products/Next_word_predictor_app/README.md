@@ -21,7 +21,7 @@ instance, biological sequence analysis), and data compression. (
 [Coursera](https://www.coursera.org/learn/natural-language-processing/lecture/UnEHs/07-01-noisy-channel-model-8-33)
 ).
 
-Based on **N-grams tables, builded from gathered online text**, a **next
+Based on **N-grams tables, built from gathered online text**, a **next
 word predictor application** was built. It **returns the most likely
 next word** based on the **last three words**, if it doesnt find a
 likely matching word for this last three terms, them it will try to find
