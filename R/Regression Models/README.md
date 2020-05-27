@@ -3,7 +3,7 @@ Regression Models
 
 ## Repository content:
 
-### [Automatic Vs Manual Cars](https://github.com/CDopazo/Project_portfolio/tree/master/R/Regression%20Models/Cars_Autovsmanual)
+### [Automatic Vs Manual Cars](https://github.com/CDopazo/Project_portfolio/tree/master/R/Regression%20Models/Cars_Autovsmanual/README.md)
 
 The overall goal in this analysis is to answer two questions:
 
