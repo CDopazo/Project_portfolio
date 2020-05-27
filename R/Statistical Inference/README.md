@@ -5,7 +5,7 @@ Statistical Inference
 
 ### [Central Limit Theorem - Exponencial distribution](https://github.com/CDopazo/Project_portfolio/tree/master/R/Statistical%20Inference/Exponencial_distribution/README.md)
 
-The over all goal here is show that at large numbers the distribution of
+The overall goal here is show that at large numbers the distribution of
 the collection of the **random exponentials samples** tend to a normal
 distribution, **proving the Central limit theorem**.
 
