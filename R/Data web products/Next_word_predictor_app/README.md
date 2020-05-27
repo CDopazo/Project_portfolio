@@ -60,7 +60,7 @@ information**. Which summed up to over **half a billion characters.**
 
 ## How to use the Prediction App:
 
-The prediction app has to TABS, the **Prediction TAB** and the **About
+The prediction app has two TABS, the **Prediction TAB** and the **About
 TAB.**
 
 ### Prediction TAB
