@@ -3,7 +3,7 @@ Machine Learning
 
 ## Repository content:
 
-### [Human Activity Recognition](https://github.com/CDopazo/Project_portfolio/tree/master/R/Machine%20Learning/Human_activity_recognition)
+### [Human Activity Recognition](https://github.com/CDopazo/Project_portfolio/tree/master/R/Machine%20Learning/Human_activity_recognition/README.md)
 
 The overall goal is to use **data from accelerometers** on the belt,
 forearm, arm, and dumbell of 6 participants, **to predict if they are
