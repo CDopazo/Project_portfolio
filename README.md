@@ -9,12 +9,12 @@ Im a highly motivated professional with a bachelors degree in **Biology Science*
 
 My best work will be show in the following folders of this reposiroty:
 
-* [Data Web Products](https://github.com/CDopazo/Project_portfolio/tree/master/R/Data%20web%20products)
-* [Exploratory Analysis](https://github.com/CDopazo/Project_portfolio/tree/master/R/Exploratory%20Data%20Analysis)
-* [Machine Learning](https://github.com/CDopazo/Project_portfolio/tree/master/R/Machine%20Learning)
-* [R Programming](https://github.com/CDopazo/Project_portfolio/tree/master/R%20programming)
-* [Regression Models](https://github.com/CDopazo/Project_portfolio/tree/master/R/Regression%20Models)
-* [Statistical Inference](https://github.com/CDopazo/Project_portfolio/tree/master/R/Statistical%20Inference)
+* [Data Web Products](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/README.md)
+* [Exploratory Analysis](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/README.md)
+* [Machine Learning](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/README.md)
+* [R Programming](https://github.com/CDopazo/Project_portfolio/blob/master/R/R%20programming/README.md)
+* [Regression Models](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/README.md)
+* [Statistical Inference](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/README.md)
 
 ## Contact me:
 
