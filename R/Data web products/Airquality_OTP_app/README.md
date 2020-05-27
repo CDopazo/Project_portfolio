@@ -4,7 +4,7 @@ Air Quality data set - Ozone and Temperature predictor app
 ## Introducction
 
 **Daily air quality measurements** were recorded at **New York**, from
-**May to September 1973**. The data were obtained from the New York
+**May to September 1973**. The data was obtained from the New York
 State Department of Conservation (ozone data) and the National Weather
 Service (meteorological data).
 
