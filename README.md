@@ -19,6 +19,7 @@ See some of my **work in R** on the following folders of this reposiroty:
 * [Statistical Inference](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/README.md)
 
 Here you can see some of my work creating interactive visualizations and dashboards with **Tableau**
+
 [Tableau Repository](https://public.tableau.com/profile/carlos.dopazo.kozakas#!/)
 
 ## Contact me:
