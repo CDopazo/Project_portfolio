@@ -180,7 +180,7 @@ training set** (learn more about Random Forest here:
 [See the plot code here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Machine%20Learning/Human_activity_recognition/coding/Plot_3.R)
 
 The accuracy for the **Random Forest model is 0.9945** almost 100% of
-right guessing, 0,55% out of sample error\*\*, we dont need to look for
+right guessing, 0,55% out of sample error, we dont need to look for
 any other model, this one seems to be perfect.
 
 ## References:
