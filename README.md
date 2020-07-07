@@ -20,7 +20,7 @@ See some of my **work in R** on the following folders of this reposiroty:
 
 Here you can see some of my work creating interactive visualizations and dashboards with **Tableau**
 
-[Tableau Repository](https://public.tableau.com/profile/carlos.dopazo.kozakas#!/)
+* [Tableau Repository](https://public.tableau.com/profile/carlos.dopazo.kozakas#!/)
 
 ## Contact me:
 
