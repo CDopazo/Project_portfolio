@@ -9,7 +9,7 @@ Im a highly motivated professional with a bachelors degree in **Biology Science*
 
 ## My projects:
 
-See some of my **work in R** on the following folders of this reposiroty:
+See some of my **work in R** on the following folders of this repository:
 
 * [Data Web Products](https://github.com/CDopazo/Project_portfolio/blob/master/R/Data%20web%20products/README.md)
 * [Exploratory Analysis](https://github.com/CDopazo/Project_portfolio/blob/master/R/Exploratory%20Data%20Analysis/README.md)
