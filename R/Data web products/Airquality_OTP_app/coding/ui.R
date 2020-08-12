@@ -9,7 +9,7 @@ sidebarLayout(
   
   mainPanel(
     
-    sliderInput("Solar slider BAR",
+    sliderInput("SliderSolar",
                 "Solar Radiation value:",
                 min = min(airquality[complete.cases(airquality),]$Solar.R) - 5,
                 max = max(airquality[complete.cases(airquality),]$Solar.R) +5,
