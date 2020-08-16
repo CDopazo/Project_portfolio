@@ -65,7 +65,7 @@ Awarded**.
 In this Readme you will find the questions answered with **Hypothesis
 testing**.
 
-But [here](XXXXXXXXXX) you can find some other questions answered with
+But [here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Regression%20Models/Olympics_Records/README.md) you can find some other questions answered with
 **Regressions Models** about this same data set:
 
 ## Questions to answer with Hypothesis testing:
