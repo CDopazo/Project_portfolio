@@ -1,4 +1,4 @@
-Olympics Records - Lineal Regression Analysis
+Olympics Records - Linear Regression Analysis
 ================
 
 # Introduction
@@ -162,7 +162,7 @@ participants than the previous ones?
 
 #### Conclusion 2:
 
-**Yes there is a correlation**, a lineal correlation greater than 90%
+**Yes there is a correlation**, a linear correlation greater than 90%
 (r-squared \> 0.9) with statistical significance with way lower pvalue
 than 5% (p-value \<\<\< 0.05) was achivied for the participation of
 athletes across all years, every year the participation is greater, for
@@ -263,7 +263,7 @@ more or less male or female participants than the previous ones?
 
 #### Conclusion 3:
 
-**Yes there is a correlation**, A lineal correlation greater than 79%
+**Yes there is a correlation**, A linear correlation greater than 79%
 (r-squared \> 0.79) with statistical significance with way lower pvalue
 than 5% (p-value \<\<\< 0.05) was achivied for the participation of Male
 and females athletes across all years, **every year the participation is
