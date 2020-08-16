@@ -1,0 +1,157 @@
+---
+title: "Olympics Records - Linear Regression Analysis"
+output: github_document
+---
+# Introduction
+
+An analysis of the Olympics data from all the olympics games, **120 years of data including winter and summer seasons** was performed in order to highlight patterns or trends linked mainly with the **performance and health of the athletes and insights about the event organization and participation.**
+
+This presentation insighs are proposals for the **Olympics Review magazine** which is the official magazine of the Olympic Movement. Published quarterly in English, French and Spanish, its content is a mix of official news and information as well as more in-depth features on topics of interest to the sporting movement.
+
+[here](https://public.tableau.com/profile/carlos.dopazo.kozakas#!/vizhome/Olimpics_sport/OlympicsStory) you can find a Tableau presentation using the results of this analysis.
+
+```{r echo=FALSE,message=FALSE, warning=FALSE,out.width="1000px"}
+library(knitr)
+include_graphics("images/olympics.png")
+```
+
+Download the data [here](https://www.dropbox.com/sh/0wqw8fmiwrzr8ef/AABQijjQM522INXX1FCdamzma?dl=0)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+source("coding/data_manipulation.R")
+```
+
+The Data looks like this:
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+head(olympics)
+```
+
+The data correspond to 120 years of olympics games, with **134.732 differents athletes** and **271.116 rows**.
+
+Every row in the data correspond to record of some athlete playing in some olympic event, the columns are athlete's: **Name, Sex, Age, Height, Weight Team, NOC, Games, Year, Season, City, Sport, Event and Medal Awarded**.
+
+In this Readme you will find the questions answered with *Regression Models**.
+
+But [here](XXXXXXXXXX) you can find some other questions answered with **Hypothesis Testing** about this same data set:
+
+# Regression Models:
+
+Correlations between a lot of variables pairs were sought, just a few resulted to have a some level of clear correlation (r-squared > 0.7 and p-value <0.05).
+
+## Correlated Variables:
+
+### Regression 1: Weight Vs Height by Sport
+
+There is a correlation between the Weight and the Height of teach athlete? . Measuring height and weight proportion is important when monitoring health. Height and weight measurements are used to calculate your body mass index, or BMI, a measure of healthy versus unhealthy weight.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+head(we_hei)
+```
+
+#### Conclusion 1:
+**Yes there is a correlation**, Sports with a correlation greater than 80%(r-squared> 0.8) with statistical significance with lower pvalue than 5% (p-value<0.05) ordered by r-squared are: **Triathlon, Rugby Sevens, Figure Skating**, below that 19 sports have 70% of correlation (r-squared>0.7), those are: Rowing, Biathlon, Speed Skating, Beach Volleyball, Basketball, Basque Pelota, Cross Country Skiing, Handball, Gymnastics, Swimming, Tennis, Wrestling, Short Track Speed, Skating, Ice Hockey, Jeu De Paume, Diving, Volleyball, Alpine Skiing, Alpinism, Freestyle Skiing and Badminton.
+
+It could be said that the sports listed above are the sports with a higher correlation between weight and height meaning that the majority of the athletes had an **optimal proportion of height and weight**, there are none or are just a few athletes with to much weight been short of stature neither tall athletes with under weight.
+
+### Regression 2: Total Participation vs Time by Season
+
+There is a correlation between the number of athletes participating and the Years? in other words, each new olympics has more or less participants than the previous ones?
+
+#### Total participation in Summer games model
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_summer))
+```
+
+#### Total participation in Winter games model
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_winter))
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+par(mfrow=c(1,2))
+plot(years_summer$Year, years_summer$Name, main= "Summer Games", xlab="", ylab = "Number of Athletes")
+abline(lm_summer,col="red")
+plot(years_winter$Year, years_winter$Name, main= "Winter Games", xlab="", ylab = "Number of Athletes")
+abline(lm_winter,col="blue")
+```
+
+#### Conclusion 2: 
+**Yes there is a correlation**, a linear correlation greater than 90% (r-squared > 0.9) with statistical significance with way lower pvalue than 5% (p-value <<< 0.05) was achivied for the participation of athletes across all years, every year the participation is greater, for summer and winter olympics. **Summer R squared is 0.92** and **Winter rsquared is 0.90.**
+
+### Regression 3: Sex Participation vs Time by Season
+
+There is a correlation between the number of male and female athletes participating and the Years? in other words, **each new olympics has more or less male or female participants than the previous ones?
+
+#### Male participation in Summer games regression
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_male_summer))
+```
+
+#### Male participation in Winter games regression
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_male_winter))
+```
+
+#### Female participation in Summer games regression
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_female_summer))
+```
+
+#### Female participation in Winter games regression
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+print(summary(lm_female_winter))
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+par(mfrow=c(2,2))
+plot(male_summer$Year,male_summer$Name, main= "Males in Summer Games", xlab="", ylab = "Number of Athletes")
+abline(lm_male_summer,col="red")
+plot(male_winter$Year,male_winter$Name, main= "Males in Winter Games", xlab="", ylab = "Number of Athletes")
+abline(lm_male_winter,col="blue")
+plot(female_summer$Year,female_summer$Name, main= "Females in Summer Games", xlab="", ylab = "Number of Athletes")
+abline(lm_female_summer,col="red")
+plot(female_winter$Year,female_winter$Name, main= "Females in Winter Games", xlab="", ylab = "Number of Athletes")
+abline(lm_female_winter,col="blue")
+```
+
+#### Conclusion 3:
+**Yes there is a correlation**, A linear correlation greater than 79% (r-squared > 0.79) with statistical significance with way lower pvalue than 5% (p-value <<< 0.05) was achivied for the participation of Male and females athletes across all years, **every year the participation is greater**, for summer and winter olympics. Female summer R squared is 0.86 and female winter rsquared is 0.83. Male summer R squared is 0.79 and Male winter rsquared is 0.93.
+
+## No-Correlated Variables:
+
+### Regression 4: Age vs Medals by Sport
+
+There is a correlation between the Age and the awarding of a medal ? Been older or younger affects the probability of been awarded with any medal in some sport?.
+
+#### Here you can see the sports with F-statistic p-value < 0.05
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+head(age_med)
+```
+
+#### Conclusion 4:
+
+**There is no clear linear correlation** between age and the awarding of any medal for any sports, This means that the change in the awarding of a medal from "no medal" to any medal is not lineally related to an increase or a decrease in the Age of the Athletes.
+
+### Regression 5: Height Vs Medal by Sport
+
+There is a correlation between the Height and the awarding of a medal ? Been taller or shorter affects the probability of been awarded with any medal in some sport?.
+
+#### Here you can see the sports with F-statistic p-value < 0.05
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+head(hei_med)
+```
+
+#### Conclusion 5:
+**There is no clear linear correlation** between Height and the awarding of any medal for any sports, This means that the change in the awarding of a medal from "no medal" to any medal is not lineally related to an increase or a decrease in the Height of the Athletes.
+
+### Regression 6: Weight Vs Medals by Sport
+
+**There is no correlation** between the Weight and the awarding of a medal ? Been heavier or ligther affects the probability of been awarded with any medal in some sport?.
+
+#### Here you can see the sports with F-statistic p-value < 0.05
+```{r, echo=FALSE, message=FALSE, warning=FALSE, }
+head(wei_med)
+```
+
+#### Conclusion 6:
+**There is no clear linear correlation** between Weight and the awarding of any medal for any sports, This means that the change in the awarding of a medal from "no medal" to any medal is not lineally related to an increase or a decrease in the Weight of the Athletes.
