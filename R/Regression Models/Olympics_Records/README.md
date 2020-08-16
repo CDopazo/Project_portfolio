@@ -65,7 +65,7 @@ Awarded**.
 In this Readme you will find the questions answered with \*Regression
 Models\*\*.
 
-But [here](XXXXXXXXXX) you can find some other questions answered with
+But [here](https://github.com/CDopazo/Project_portfolio/blob/master/R/Statistical%20Inference/Olympics_records/README.md) you can find some other questions answered with
 **Hypothesis Testing** about this same data set:
 
 # Regression Models:
