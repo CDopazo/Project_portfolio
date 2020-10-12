@@ -11,18 +11,6 @@ Being a Scientist gives me the ability to deal with 𝗹𝗮𝗿𝗴𝗲 𝗮�
 
 I am driven by the opportunities to develop 𝗾𝘂𝗮𝗻𝘁𝗶𝘁𝗮𝘁𝗶𝘃𝗲, 𝗮𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝗮𝗹 and 𝗾𝘂𝗮𝗹𝗶𝘁𝗮𝘁𝗶𝘃𝗲 𝗿𝗲𝘀𝗲𝗮𝗿𝗰𝗵 by working with other professionals as a team. I enjoy 𝗽𝗿𝗼𝗯𝗹𝗲𝗺-𝘀𝗼𝗹𝘃𝗶𝗻𝗴, and have a passion for 𝗻𝗲𝘄 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲𝘀.
 
-𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 & 𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝗶𝗲𝘀:
-* R
-
-* SQL
-* Excel
-* Python
-* Tableau
-* Spark SQL/Databricks
-* Google Analytics
-
-
-
 ## My projects:
 
 See some of my **work in R** on the following folders of this repository:
